@@ -10,7 +10,7 @@ $menu = array(
     <nav class="navbar">
         <ul>
             <li>
-                <a
+                <a href="/"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
                         class="active"
                     <?php } ?>>
@@ -20,6 +20,7 @@ $menu = array(
             <!-- TODO: projects -->
             <li>
                 <a
+                    href="contact.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
                         class="active"
                     <?php } ?>>
