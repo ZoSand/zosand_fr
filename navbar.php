@@ -14,6 +14,8 @@ $menu = array(
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
                         class="active"
                     <?php } ?>>
+
+                    <i class="fa fa-duotone fa-person"></i>">
                     About Me
                 </a>
             </li>
