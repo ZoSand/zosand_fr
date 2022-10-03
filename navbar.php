@@ -15,7 +15,7 @@ $menu = array(
                         class="active"
                     <?php } ?>>
 
-                    <i class="fa fa-duotone fa-person"></i>
+                    <i class="fa-thin fa-person"></i>
                     About Me
                 </a>
             </li>
@@ -26,7 +26,7 @@ $menu = array(
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
                         class="active"
                     <?php } ?>>
-                    <i class="fa fa-envelope"></i>
+                    <i class="fa-thin fa-envelope"></i>
                     Contact
                 </a>
             </li>
