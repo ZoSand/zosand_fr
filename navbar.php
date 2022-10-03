@@ -15,7 +15,7 @@ $menu = array(
                         class="active"
                     <?php } ?>>
 
-                    <i class="fa fa-duotone fa-person"></i>">
+                    <i class="fa fa-duotone fa-person"></i>
                     About Me
                 </a>
             </li>
