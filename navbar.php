@@ -6,15 +6,23 @@
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
                         class="active"
                     <?php } ?>>
-                    Home
+                    About Me
                 </a>
             </li>
             <li>
-                <a href="/about.php"
-                    <?php if ($_SERVER['SCRIPT_NAME'] == "/about.php") { ?>
+                <a href="/"
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/unknown.php") { ?>
                         class="active"
                     <?php } ?>>
-                    About me
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="/"
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/unknown.php") { ?>
+                        class="active"
+                    <?php } ?>>
+                    Skills
                 </a>
             </li>
             <!-- TODO: add sections here -->
