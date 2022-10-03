@@ -1,7 +1,7 @@
 <?php
 include("./header.php");
 ?>
-<p style="color: aliceblue">test</p>
+<!--TODO: put main body here -->
 <?php
 include("./footer.php");
 ?>
