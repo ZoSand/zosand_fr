@@ -1,25 +1,31 @@
+<?php
+$menu = array(
+    'About' => array('text' => 'About me', 'url' => 'index.php'),
+    'gallery' => array('text' => 'Projects', 'url' => 'unknown.php'),
+    'contact' => array('text' => 'Contact', 'url' => 'contact.php'),
+);
+?>
+
 <header>
     <nav class="navbar">
-        <?php
-        $menu = array(
-            array('text' => 'About me', 'url' => 'index.php'),
-            array('text' => 'Projects', 'url' => 'unknown.php'),
-            array('text' => 'Contact', 'url' => 'contact.php'),
-        );
-
-        $html = "<ul>";
-        foreach ($menu as &$menuItem) {
-            $html .= "<li>";
-            $html .= "<a href='{$menuItem['url']}'";
-            if ($_SERVER['SCRIPT_NAME'] == $menuItem['url']) {
-                $html .= " class='active'";
-            }
-            $html .= ">";
-            $html .= "{$menuItem['text']}";
-            $html .= "</a>";
-            $html .= "</li>";
-        }
-        $html .= "</ul>";
-        ?>
+        <ul>
+            <li>
+                <a
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
+                        class="active"
+                    <?php } ?>>
+                    About Me
+                </a>
+            </li>
+            <!-- TODO: projects -->
+            <li>
+                <a
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
+                        class="active"
+                    <?php } ?>>
+                    Contact
+                </a>
+            </li>
+        </ul>
     </nav>
 </header>
