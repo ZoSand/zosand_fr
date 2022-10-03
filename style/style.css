@@ -5,5 +5,11 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 }
