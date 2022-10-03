@@ -10,20 +10,20 @@
                 </a>
             </li>
             <li>
-                <a href="/contact.php"
-                    <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
-                        class="active"
-                    <?php } ?>>
-                    Contact
-                </a>
-            </li>
-            <!-- TODO: add sections here -->
-            <li style="float:right">
                 <a href="/about.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/about.php") { ?>
                         class="active"
                     <?php } ?>>
                     About me
+                </a>
+            </li>
+            <!-- TODO: add sections here -->
+            <li style="float:right">
+                <a href="/contact.php"
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
+                        class="active"
+                    <?php } ?>>
+                    Contact
                 </a>
             </li>
         </ul>
