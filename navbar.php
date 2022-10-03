@@ -26,7 +26,7 @@ $menu = array(
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
                         class="active"
                     <?php } ?>>
-                    <i class="fa-sharp fa-solid fa-address-book"></i>
+                    <i class="fa fa-address-book"></i>
                     Contact
                 </a>
             </li>
