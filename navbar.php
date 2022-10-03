@@ -9,26 +9,26 @@
                     About Me
                 </a>
             </li>
-            <li>
-                <a href="/"
-                    <?php if ($_SERVER['SCRIPT_NAME'] == "/unknown.php") { ?>
-                        class="active"
-                    <?php } ?>>
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a href="/"
-                    <?php if ($_SERVER['SCRIPT_NAME'] == "/unknown.php") { ?>
-                        class="active"
-                    <?php } ?>>
-                    Skills
-                </a>
-            </li>
+            <?php
+            $pages = scandir("/pages");
+            foreach ($pages as $page) {
+                ?>
+                <li>
+                    <a href="/"
+                        <?php if ($_SERVER['SCRIPT_NAME'] == "/unknown.php") { ?>
+                            class="active"
+                        <?php } ?>>
+                        Projects
+                    </a>
+                </li>
+                <?php
+            }
+            ?>
+
             <!-- TODO: add sections here -->
             <li style="float:right">
-                <a href="/contact.php"
-                    <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
+                <a href="/pages/contact.php"
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/pages/contact.php") { ?>
                         class="active"
                     <?php } ?>>
                     Contact
