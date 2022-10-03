@@ -6,4 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="main">
+<?php
+include("./navbar.php");
+?>
+<div class="main">
