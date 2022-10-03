@@ -19,7 +19,7 @@ body {
     float: left;
 }
 
-.navbar ul li a {
+.navbar a {
     display: block;
     color: white;
     text-align: center;
@@ -28,10 +28,10 @@ body {
 }
 
 /* Change the link color to #111 (black) on hover */
-.navbar ul li a:hover {
+.navbar a:hover {
     background-color: #111;
 }
 
-.navbar ul li a.active {
+.navbar a.active {
     background-color: #fc5c39;
 }
