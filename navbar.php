@@ -26,7 +26,7 @@
             ?>
 
             <!-- TODO: add sections here -->
-            <li style="float:right">
+            <li>
                 <a href="/pages/contact.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/pages/contact.php") { ?>
                         class="active"
