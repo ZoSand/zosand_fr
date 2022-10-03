@@ -24,6 +24,7 @@ $menu = array(
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
                         class="active"
                     <?php } ?>>
+                    <i class="fa fa-envelope"></i>
                     Contact
                 </a>
             </li>
