@@ -1,0 +1,47 @@
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    left: 76px;
+    background: #D92925;
+    border-radius: 3px;
+    z-index: -2;
+}
+
+.timeline article {
+    position: relative;
+    left: 0;
+    background: #333;
+    width: calc( 100% - 40px );
+    padding: 1px 20px;
+    color: white;
+    border-radius: 15px;
+    margin: 0 0 0 48px;
+    z-index: -1;
+}
+
+.timeline article + article {
+    margin-top: 20px;
+}
+
+.timeline article:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -48px;
+    background: #333;
+    width: 24px;
+    height: 24px;
+    border: 6px #D92925 solid;
+    border-radius: 50%;
+    z-index: -1;
+}

@@ -32,8 +32,18 @@
 /* Change the link color to #111 (black) on hover */
 .navbar a:hover {
     background-color: #424b54;
+    /*trick to replace solid border from .active with background color*/
+    border-bottom-width: 5px;
+    border-bottom: solid #424b54;
 }
 
 .navbar a.active {
+    border-bottom-width: 5px;
+    border-bottom: solid #D92925;
+}
+
+/*
+.navbar a.active {
     background-color: #D92925;
 }
+*/

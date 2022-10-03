@@ -1,7 +1,9 @@
 @import "navbar.css";
+@import "timeline.css";
 
 * {
     font-family: Arial;
+    box-sizing: border-box;
 }
 
 body {
