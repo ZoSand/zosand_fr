@@ -22,3 +22,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #111;
 }
+
+nav ul li a.active {
+    background-color: #fc5c39;
+}
