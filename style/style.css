@@ -1,5 +1,9 @@
 @import "navbar.css";
 
+* {
+    font-family: Arial;
+}
+
 body {
     background-color: #262626;
 }

@@ -15,18 +15,23 @@ $menu = array(
                         class="active"
                     <?php } ?>>
 
-                    <i class="fa fa-user-tie"></i>
-                    About Me
+                    Home
                 </a>
             </li>
-            <!-- TODO: projects -->
+            <li>
+                <a href="/projects.php"
+                    <?php if ($_SERVER['SCRIPT_NAME'] == "/projects.php") { ?>
+                        class="active"
+                    <?php } ?>>
+                    Projects
+                </a>
+            </li>
             <li>
                 <a
                     href="contact.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
                         class="active"
                     <?php } ?>>
-                    <i class="fa fa-sharp fa-address-book"></i>
                     Contact
                 </a>
             </li>
