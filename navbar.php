@@ -10,7 +10,7 @@
         foreach ($menu as $menuItem) {
             $html .= "<li>";
             $html .= "<a href='{$menuItem['url']}'";
-            if ($_SERVER['SCRIPT_NAME'] == "/index.php") {
+            if ($_SERVER['SCRIPT_NAME'] == $menuItem['url']) {
                 $html .= " class='active'";
             }
             $html .= ">";
