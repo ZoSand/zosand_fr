@@ -17,7 +17,8 @@
                     Contact
                 </a>
             </li>
-            <li>
+            <!-- TODO: add sections here -->
+            <li style="float:right">
                 <a href="/about.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/about.php") { ?>
                         class="active"
