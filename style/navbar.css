@@ -29,9 +29,9 @@
 
 /* Change the link color to #111 (black) on hover */
 .navbar a:hover {
-    background-color: #111;
+    background-color: #424b54;
 }
 
 .navbar a.active {
-    background-color: #d11f1f;
+    background-color: #a6ece0;
 }
