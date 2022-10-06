@@ -20,7 +20,7 @@
     position: relative;
     left: 0;
     background: #333;
-    width: calc( 100% - 40px );
+    width: calc(100% - 40px);
     padding: 1px 20px;
     color: white;
     border-radius: 15px;
