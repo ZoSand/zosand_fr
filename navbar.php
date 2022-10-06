@@ -27,6 +27,11 @@ $menu = array(
                 </a>
             </li>
             <li>
+                <a href="kanban.zosand.fr">
+                    <?php echo $_SERVER['SERVER_NAME'] ?>
+                </a>
+            </li>
+            <li>
                 <a
                     href="contact.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
