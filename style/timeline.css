@@ -4,7 +4,7 @@
     padding: 40px 60px;
 }
 
-.timeline:after {
+.timeline::after {
     content: "";
     position: absolute;
     top: 45px;
@@ -32,7 +32,7 @@
     margin-top: 20px;
 }
 
-.timeline article:before {
+.timeline article::before {
     content: "";
     display: block;
     position: absolute;
@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 
-.timeline .project .title:before {
+.timeline .project .title::before {
     content: attr(before-date);
     position: absolute;
     top: 20px;
