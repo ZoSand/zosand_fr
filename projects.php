@@ -21,19 +21,17 @@ $projects = $projectsStatement->fetchAll();
 
 if (count($projects) > 0) {
     echo '<div class="timeline">';
-}
 
-foreach ($projects as $project) {
-    ?>
-    <article class=project>
-        <h2 class="title" before-date=<?php echo $project["date"] ?>><?php echo $project["name"] ?></h2>
-        <p>
-            <?php echo $project["description"] ?>
-        </p>
-    </article>
-    <?php
-}
-if (count($projects) > 0) {
+    foreach ($projects as $project) {
+        ?>
+        <article class=project>
+            <h2 class="title" before-date=<?php echo $project["date"] ?>><?php echo $project["name"] ?></h2>
+            <p>
+                <?php echo $project["description"] ?>
+            </p>
+        </article>
+        <?php
+    }
     echo '</div>';
 }
 ?>
