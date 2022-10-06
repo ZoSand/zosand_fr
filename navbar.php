@@ -38,8 +38,8 @@ $menu = array(
                     $protocol = 'http';
                 }
                     echo "{$protocol}://kanban.{$_SERVER['SERVER_NAME']}";
-                ?>>
-                    Kanban
+                ?> disabled>
+                    Kanban (disabled)
                 </a>
             </li>
             <li>
