@@ -27,22 +27,6 @@ $menu = array(
                 </a>
             </li>
             <li>
-                <a role="link" aria-disabled="true" > <!-- href=<?php
-                if (isset($_SERVER['HTTPS']) &&
-                    ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||
-                    isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
-                    $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
-                    $protocol = 'https';
-                }
-                else {
-                    $protocol = 'http';
-                }
-                    echo "{$protocol}://kanban.{$_SERVER['SERVER_NAME']}";
-                ?> -->
-                    Kanban (disabled)
-                </a>
-            </li>
-            <li>
                 <a
                     href="contact.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/contact.php") { ?>
