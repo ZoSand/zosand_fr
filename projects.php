@@ -11,42 +11,25 @@ include("./header.php");
                 "mysql:host={$dbConfig['host']};dbname={$dbConfig['username']};charset=utf8",
                 $dbConfig["username"],
                 $dbConfig["password"],
-                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
-);
+                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         } catch (Exception $e) {
             die('Error : ' . $e->getMessage());
         }
+
+        $projectsStatement = $db->prepare('SELECT * FROM projects ORDER BY date');
+        $projectsStatement->execute();
+        $projects = $projectsStatement->fetchAll();
+        foreach ($projects as $project) {
+            ?>
+            <article>
+                <h2><?php echo $project["name"] ?> <small>(<?php echo $project["date"] ?>)</small></h2>
+                <p>
+                    <?php echo $project["description"] ?>
+                </p>
+            </article>
+            <?php
+        }
         ?>
-        <article>
-            <h2>Match contre Joueur A</h2>
-            <ul>
-                <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022,</li>
-                <li><span>Places</span> 340</li>
-                <li><span>Billeterie</span> <a href="#">Lien</a></li>
-            </ul>
-        </article>
-        <article>
-            <ul>
-                <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022,</li>
-                <li><span>Places</span> 340</li>
-                <li><span>Billeterie</span> <a href="#">Lien</a></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Match contre Joueur A</h2>
-            <ul>
-                <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022,</li>
-                <li><span>Places</span> 340</li>
-                <li><span>Billeterie</span> <a href="#">Lien</a></li>
-            </ul>
-        </article>
-        </article>
-        <article>
-            <h2>Match contre Joueur A</h2>
-        </article>
     </div>
 
 
