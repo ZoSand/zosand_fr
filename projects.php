@@ -6,16 +6,22 @@ include("./header.php");
     <div class="timeline">
         <?php
         $dbConfig = parse_ini_file('../db.ini');
-        $con = mysqli_connect("localhost", $dbConfig['username'], $dbConfig['password'], $dbConfig['database']);
-        if (!$con) {
-            die("Failed to connect to Database");
+        try {
+            $db = new PDO(
+                "mysql:host={$dbConfig['host']};dbname={$dbConfig['username']};charset=utf8",
+                $dbConfig["username"],
+                $dbConfig["password"],
+                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+);
+        } catch (Exception $e) {
+            die('Error : ' . $e->getMessage());
         }
         ?>
         <article>
             <h2>Match contre Joueur A</h2>
             <ul>
                 <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022, </li>
+                <li><span>Date</span> 01/04/2022,</li>
                 <li><span>Places</span> 340</li>
                 <li><span>Billeterie</span> <a href="#">Lien</a></li>
             </ul>
@@ -23,7 +29,7 @@ include("./header.php");
         <article>
             <ul>
                 <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022, </li>
+                <li><span>Date</span> 01/04/2022,</li>
                 <li><span>Places</span> 340</li>
                 <li><span>Billeterie</span> <a href="#">Lien</a></li>
             </ul>
@@ -32,7 +38,7 @@ include("./header.php");
             <h2>Match contre Joueur A</h2>
             <ul>
                 <li><span>Lieu</span> Paris</li>
-                <li><span>Date</span> 01/04/2022, </li>
+                <li><span>Date</span> 01/04/2022,</li>
                 <li><span>Places</span> 340</li>
                 <li><span>Billeterie</span> <a href="#">Lien</a></li>
             </ul>

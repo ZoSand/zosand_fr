@@ -1,11 +1,3 @@
-<?php
-$menu = array(
-    'About' => array('text' => 'About me', 'url' => 'index.php'),
-    'gallery' => array('text' => 'Projects', 'url' => 'unknown.php'),
-    'contact' => array('text' => 'Contact', 'url' => 'contact.php'),
-);
-?>
-
 <header>
     <nav class="navbar">
         <ul>
