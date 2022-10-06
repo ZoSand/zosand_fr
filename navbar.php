@@ -27,7 +27,7 @@ $menu = array(
                 </a>
             </li>
             <li>
-                <a role="link" aria-disabled="true" <!-- href=<?php
+                <a role="link" aria-disabled="true" > <!-- href=<?php
                 if (isset($_SERVER['HTTPS']) &&
                     ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||
                     isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
@@ -38,7 +38,7 @@ $menu = array(
                     $protocol = 'http';
                 }
                     echo "{$protocol}://kanban.{$_SERVER['SERVER_NAME']}";
-                ?> --> >
+                ?> -->
                     Kanban (disabled)
                 </a>
             </li>
