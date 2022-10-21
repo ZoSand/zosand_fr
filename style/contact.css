@@ -3,6 +3,7 @@ form {
     height: 100%;
     background-color: #333;
     border-radius: 15px;
+    overflow: scroll;
 }
 
 form input, textarea {
@@ -21,4 +22,5 @@ form input[type=text]:focus, textarea:focus {
 
 form textarea {
     height: calc(100% - 180px);
+    min-height: 3em;
 }
