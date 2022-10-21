@@ -59,3 +59,37 @@
     left: -90px;
     font-size: 0.75em;
 }
+
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .timeline .project .title::before {
+        top: 50px;
+        left: 20px;
+
+        font-size: 0.5em;
+    }
+    .timeline {
+        padding: 40px 40px 40px 20px;
+    }
+    .timeline::after {
+        left: 36px;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,5 +1,6 @@
 @import "navbar.css";
 @import "timeline.css";
+@import "contact.css";
 
 * {
     font-family: Arial;
@@ -13,6 +14,43 @@ body {
 .main {
     position: absolute;
     top: 60px;
+    bottom: 14px;
     width: 100%;
-    padding: 0 300px;
+}
+
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .main {
+        padding: 0;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .main {
+        padding: 0;
+    }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .main {
+        padding: 0;
+    }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    .main {
+        padding: 0 150px;
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .main {
+        padding: 0 150px;
+    }
 }

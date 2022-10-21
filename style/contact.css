@@ -1,0 +1,24 @@
+form {
+    padding: 60px;
+    height: 100%;
+    background-color: #333;
+    border-radius: 15px;
+}
+
+form input, textarea {
+    width: 100%;
+    height: 3em;
+    border-radius: 7px;
+    margin: 3px;
+    border-width: 0;
+}
+
+form input[type=text]:focus, textarea:focus {
+    border-left-width: 5px;
+    border-left: solid #D92925;
+    outline: 0;
+}
+
+form textarea {
+    height: calc(100% - 180px);
+}

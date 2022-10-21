@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li>
-                <a href="/projects.php"
+                <a href="projects.php"
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/projects.php") { ?>
                         class="active"
                     <?php } ?>>

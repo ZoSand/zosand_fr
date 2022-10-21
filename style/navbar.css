@@ -8,7 +8,7 @@
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 150px 0 150px;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
 }
@@ -35,48 +35,31 @@
     /*trick to replace solid border from .active with background color*/
     border-bottom-width: 5px;
     border-bottom: solid #424b54;
-    border-radius: 5px;
 }
 
 .navbar a.active {
     border-bottom-width: 5px;
     border-bottom: solid #D92925;
-    border-radius: 5px;
 }
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
-    .navbar ul {
-        padding: 0;
-    }
 }
 
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
-    .navbar ul {
-        padding: 0;
-    }
 }
 
 /* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {
-    .navbar ul {
-        padding: 0;
-    }
 }
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
-    .navbar ul {
-        padding: 0;
-    }
 }
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
-    .navbar ul {
-        padding: 0 150px 0 150px;
-    }
 }
 
 /*
