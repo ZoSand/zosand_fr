@@ -12,6 +12,7 @@ form input, textarea {
     border-radius: 7px;
     margin: 3px;
     border-width: 0;
+    color: #111;
 }
 
 form input[type=text]:focus, textarea:focus {

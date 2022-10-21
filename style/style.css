@@ -1,10 +1,12 @@
 @import "navbar.css";
+@import "index.css";
 @import "timeline.css";
 @import "contact.css";
 
 * {
     font-family: Arial;
     box-sizing: border-box;
+    color: white;
 }
 
 body {

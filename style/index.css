@@ -1,0 +1,47 @@
+.about {
+    background-color: #333;
+    border-radius: 15px;
+    min-height: 150px;
+    height: fit-content;
+    word-wrap: break-word;
+    display: block;
+    text-align: center;
+}
+
+.about img {
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: #262626;
+    border-style: solid;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -25px;
+    z-index: 2;
+}
+
+.about div {
+    padding: 25px;
+}
+
+div.wrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+}
+
+div h1 {
+    margin-bottom: 0;
+}
+
+div.wrapper div.align-left {
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+
+div.wrapper div.align-right {
+    text-align: left;
+    float: right;
+    width: 50%;
+}
