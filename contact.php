@@ -5,7 +5,7 @@ if (isset($_POST['username']) && isset($_POST['useremail']) && isset($_POST['use
     $from = "noreply@zosand.fr";
     $to = "webmaster@zosand.fr";
     $subject = $_POST['usersubject'];
-    $message = "Message from:" . $_POST['useremail']. "(" . $_POST['username'] . ")<br>" . $_POST['usermessage'];
+    $message = "Message from: " . $_POST['useremail']. " (" . $_POST['username'] . ") " . $_POST['usermessage'];
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
 }
