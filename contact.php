@@ -7,7 +7,7 @@ if (isset($_POST['username']) && isset($_POST['useremail']) && isset($_POST['use
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
     $to = $_POST['useremail'];
-    $message = "You send a message to " . $to . ": " . $_POST['usermessage'];
+    $message = "You send a message from " . $to . ": " . $_POST['usermessage'];
     mail($to, $subject, $message, $headers);
 
 }
