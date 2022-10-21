@@ -28,6 +28,11 @@
     z-index: -1;
 }
 
+.timeline article img {
+    height: 200px;
+    border-radius: 10px;
+}
+
 .timeline article + article {
     margin-top: 20px;
 }

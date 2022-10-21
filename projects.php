@@ -25,10 +25,30 @@ if (count($projects) > 0) {
     foreach ($projects as $project) {
         ?>
         <article class=project>
-            <h2 class="title" before-date=<?php echo $project["date"] ?>><?php echo $project["name"] ?></h2>
+            <h2 class="title"
+                before-date=<?php if (isset($project["date"])) echo $project["date"] ?>><?php if (isset($project["name"])) echo $project["name"] ?></h2>
+
+            <?php
+            if (isset($project["language"]))
+                echo "<h4>" . $project["language"] . "</h4>"
+            ?>
+
             <p>
-                <?php echo $project["description"] ?>
+                <?php
+                if (isset($project["description"]))
+                    echo $project["description"]
+                ?>
             </p>
+            <?php
+            $imgStatement = $db->prepare('SELECT path FROM images WHERE projectId = :projectId ORDER BY id DESC');
+            $imgStatement->execute(["projectId" => $project["id"]]) or die(print_r($db->errorInfo(), true));
+            $linkedImages = $imgStatement->fetchAll();
+            foreach ($linkedImages as $image) {
+                ?>
+                <img src=<?php echo $image["path"] ?>>
+                <?php
+            }
+            ?>
         </article>
         <?php
     }

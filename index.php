@@ -7,12 +7,15 @@ include("./header.php");
          alt="Photo">
 
     <div>
-        <p>Third year college student in Creajeux, I'm interested in everything related directly or indirectly to
-            programming.</p>
+        <h1>Zo LAMBERT</h1>
+        <div>
+            <p>Third year college student in Creajeux, I'm interested in everything related directly or indirectly to
+                programming.</p>
 
-        <p> As an expatriate child, I grew up in various African countries, where I discovered video games and my
-            passion
-            for computers and programming in general.</p>
+            <p> As an expatriate child, I grew up in various African countries, where I discovered video games and my
+                passion
+                for computers and programming in general.</p>
+        </div>
     </div>
 
     <div>
@@ -35,6 +38,7 @@ include("./header.php");
         </div>
     </div>
 </div>
+
 <?php
 include("./footer.php");
 ?>
