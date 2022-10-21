@@ -13,12 +13,12 @@ form input, textarea {
     margin: 3px;
     border-width: 0;
     color: #111;
+    outline: 0;
 }
 
-form input[type=text]:focus, textarea:focus {
+form input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border-left-width: 5px;
     border-left: solid #D92925;
-    outline: 0;
 }
 
 form textarea {
