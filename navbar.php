@@ -6,7 +6,6 @@
                     <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
                         class="active"
                     <?php } ?>>
-
                     Home
                 </a>
             </li>
