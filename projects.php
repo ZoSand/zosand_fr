@@ -29,8 +29,14 @@ if (count($projects) > 0) {
                 before-date=<?php if (isset($project["date"])) echo $project["date"] ?>><?php if (isset($project["name"])) echo $project["name"] ?></h2>
 
             <?php
-            if (isset($project["language"]))
-                echo "<h4>" . $project["language"] . "</h4>"
+            if (isset($project["language"])) {
+                echo "<h4>" . $project["language"] . "</h4>";
+                if (isset($project["role"]))
+                    echo isset($project["role"]);
+            }
+
+            if (isset($project["role"]))
+                echo "<h5>" . $project["role"] . "</h5>";
             ?>
 
             <p>
