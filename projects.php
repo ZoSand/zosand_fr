@@ -32,7 +32,7 @@ if (count($projects) > 0) {
             if (isset($project["language"])) {
                 echo "<h4>" . $project["language"] . "</h4>";
                 if (isset($project["role"]))
-                    echo isset($project["role"]);
+                    echo "<br/>";
             }
 
             if (isset($project["role"]))
