@@ -31,12 +31,10 @@ if (count($projects) > 0) {
             <?php
             if (isset($project["language"])) {
                 echo "<h4>" . $project["language"] . "</h4>";
-                if (isset($project["role"]))
-                    echo "<br/>";
             }
 
             if (isset($project["role"]))
-                echo "<h5>" . $project["role"] . "</h5>";
+                echo "<h5>" . $project["role"] . " programmer</h5>";
             ?>
 
             <p>
